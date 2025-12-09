@@ -270,6 +270,12 @@
             </main>
         </div>
 
+        <div>
+            <form action="{{ route('logout') }}" method="post">
+                    <input type="submit" value="Logout">
+            </form>
+        </div>
+
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
